@@ -15,9 +15,18 @@ Variant calling is the process of identifying genetic variants from sequencing d
 - Filter the VCF or BCF file using bcftools filter command. The filter command can apply various criteria to select or exclude variants based on their quality, frequency, effect, or other attributes.
 
 - Perform downstream analysis on the normalized and filtered VCF or BCF file using bcftools view, bcftools stats, bcftools query, bcftools roh, bcftools norm, or other commands. These commands can be used to visualize, summarize, query, phase, normalize, or compare the variants in different ways (This part is not included in this general pipeline).
+
+# Generating Consensus Fasta Sequences with bcftools consensus
+
+bcftools consensus is a command-line tool used to create a consensus FASTA sequence from a reference genome and a VCF (Variant Call Format) file containing genomic variants. The process starts with a reference genome in FASTA format. This is your "base" sequence that will be modified by applying the variants from the VCF file. These variants represent differences between the reference genome and the sequences you are interested in. Generating the Consensus Sequence: Use bcftools consensus to apply the variants from the VCF file to the reference genome, creating a new FASTA sequence that reflects these changes.
   
 - Consensus calling with bcftools consensus function
-  
+
+# Generating Phylogenetic Trees with RAxML
+
+RAxML (Randomized Axelerated Maximum Likelihood) is a powerful software package for phylogenetic analysis, commonly used to construct phylogenetic trees from sequence data. Here's a brief guide on how to use RAxML for this purpose: 
+Prepare a FASTA file containing the sequences you want to analyze. This could be DNA, RNA, or protein sequences. Common models for DNA sequences include GTR (General Time Reversible) with various rate heterogeneity models (like Gamma distribution). You can use RAxML's raxmlHPC with a specific model option.
+
 - Phylogenetic tree generation with RAxML HPCTHREAD
 
  
