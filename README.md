@@ -2,7 +2,6 @@
 This repository contains the shell script files of the workflow based on bcftools and samtools used for variant calling from fastq files. It is important to note that these shell scripts contain elements that are specifically written to manage the environment of the Baylor Kodiak server. All the main steps are written in separate shell scripts for the ease of interoperability between this workflow and others.
 
 # Variant calling from fastq files using bcftools and samtools
-<b> This description was generated with the help of ChatGPT4 on Microsoft Bing.</b> <br>
 Variant calling is the process of identifying genetic variants from sequencing data. BCFtools is a set of utilities that can be used to perform variant calling and manipulate variant calls in the Variant Call Format (VCF) and its binary counterpart BCF¹. A typical variant calling workflow based on BCFtools consists of the following steps:
 
  
@@ -35,6 +34,6 @@ Source: Conversation with Bing, 9/8/2023
 
 (5) SAMtools/BCFtools/HTSlib - Downloads. http://www.htslib.org/download/.
 
-(6) undefined. http://samtools.github.io/bcftools/howtos/publications.html.
+(6) http://samtools.github.io/bcftools/howtos/publications.html.
 
-(7) undefined. https://doi.org/10.1093/gigascience/giab008.
+(7) https://doi.org/10.1093/gigascience/giab008.
