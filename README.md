@@ -15,6 +15,10 @@ Variant calling is the process of identifying genetic variants from sequencing d
 - Filter the VCF or BCF file using bcftools filter command. The filter command can apply various criteria to select or exclude variants based on their quality, frequency, effect, or other attributes.
 
 - Perform downstream analysis on the normalized and filtered VCF or BCF file using bcftools view, bcftools stats, bcftools query, bcftools roh, bcftools norm, or other commands. These commands can be used to visualize, summarize, query, phase, normalize, or compare the variants in different ways (This part is not included in this general pipeline).
+  
+- Consensus calling with bcftools consensus function
+  
+- Phylogenetic tree generation with RAxML HPCTHREAD
 
  
 
